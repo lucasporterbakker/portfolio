@@ -28,7 +28,7 @@
     50%
     {
         -webkit-transform: translateY(-100%);
-                transform: translateY(-100%); 
+                transform: translateY(-100%);
 
         opacity: 0;
     }
@@ -48,7 +48,7 @@
     50%
     {
         -webkit-transform: translateY(-100%);
-                transform: translateY(-100%); 
+                transform: translateY(-100%);
 
         opacity: 0;
     }
@@ -67,7 +67,7 @@
         -webkit-transform-origin: 0 0;
                 transform-origin: 0 0;
 
-        opacity: 0; 
+        opacity: 0;
 
         -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
@@ -77,7 +77,7 @@
         -webkit-transform: translateY(0) translateZ(0) scaleY(1) skewY(0);
                 transform: translateY(0) translateZ(0) scaleY(1) skewY(0);
 
-        opacity: 1; 
+        opacity: 1;
 
         -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
@@ -93,7 +93,7 @@
         -webkit-transform-origin: 0 0;
                 transform-origin: 0 0;
 
-        opacity: 0; 
+        opacity: 0;
 
         -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
@@ -103,7 +103,7 @@
         -webkit-transform: translateY(0) translateZ(0) scaleY(1) skewY(0);
                 transform: translateY(0) translateZ(0) scaleY(1) skewY(0);
 
-        opacity: 1; 
+        opacity: 1;
 
         -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
@@ -471,7 +471,7 @@
 .center-mode
 {
     position: absolute;
-    z-index: 1; 
+    z-index: 1;
     top: 50%;
     left: 50%;
 
@@ -561,7 +561,7 @@ mark
 a
 {
     -webkit-transition: all 300ms cubic-bezier(.46, .03, .52, .96);
-            transition: all 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition: all 300ms cubic-bezier(.46, .03, .52, .96);
     text-decoration: none;
 
     color: inherit;
@@ -698,7 +698,7 @@ select
     color: #fff;
     border: none;
     border-radius: 4px;
-    outline: none; 
+    outline: none;
     background-color: #222;
     -webkit-box-shadow: 0 5px 15px 5px rgba(16, 16, 16, .1), inset 0 -2px 0 0 rgba(16, 16, 16, .2);
             box-shadow: 0 5px 15px 5px rgba(16, 16, 16, .1), inset 0 -2px 0 0 rgba(16, 16, 16, .2);
@@ -740,7 +740,7 @@ input[type='number'].placeholder,
 textarea.placeholder,
 select.placeholder
 {
-    opacity: 1; 
+    opacity: 1;
     color: #999;
 }
 
@@ -755,7 +755,7 @@ input[type='number']:-moz-placeholder,
 textarea:-moz-placeholder,
 select:-moz-placeholder
 {
-    opacity: 1; 
+    opacity: 1;
     color: #999;
 }
 
@@ -770,7 +770,7 @@ input[type='number']::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder
 {
-    opacity: 1; 
+    opacity: 1;
     color: #999;
 }
 
@@ -785,7 +785,7 @@ input[type='number']:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 select:-ms-input-placeholder
 {
-    opacity: 1; 
+    opacity: 1;
     color: #999;
 }
 
@@ -800,7 +800,7 @@ input[type='number']::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 select::-webkit-input-placeholder
 {
-    opacity: 1; 
+    opacity: 1;
     color: #999;
 }
 
@@ -884,7 +884,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-form-group label.error
 {
-    font-size: .8125rem; 
+    font-size: .8125rem;
 
     margin: .3125rem 0 0;
 
@@ -948,7 +948,7 @@ select:focus::-webkit-input-placeholder
 .vlt-header
 {
     position: absolute;
-    z-index: 30; 
+    z-index: 30;
     top: 0;
     left: 0;
 
@@ -978,7 +978,7 @@ select:focus::-webkit-input-placeholder
     padding: .9375rem;
 
     -webkit-transition: padding 300ms cubic-bezier(.46, .03, .52, .96);
-            transition: padding 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition: padding 300ms cubic-bezier(.46, .03, .52, .96);
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -1021,7 +1021,7 @@ select:focus::-webkit-input-placeholder
 .vlt-navbar .vlt-navbar-background
 {
     position: absolute;
-    z-index: -1; 
+    z-index: -1;
     top: -1px;
     right: 0;
     left: 0;
@@ -1082,7 +1082,7 @@ select:focus::-webkit-input-placeholder
 {
     display: block;
 
-    max-width: none; 
+    max-width: none;
     max-height: 24px;
 }
 .is-light .vlt-navbar .vlt-navbar-logo img.black
@@ -1095,7 +1095,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-navbar .vlt-navbar-logo:hover
 {
-    text-decoration: none; 
+    text-decoration: none;
 
     color: currentColor;
 }
@@ -1120,13 +1120,13 @@ select:focus::-webkit-input-placeholder
     margin: 0 .9375rem;
 
     -webkit-transition: color 300ms cubic-bezier(.46, .03, .52, .96);
-            transition: color 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition: color 300ms cubic-bezier(.46, .03, .52, .96);
 
     opacity: .5;
 }
 .vlt-navbar-contacts ul li a:hover
 {
-    opacity: .8; 
+    opacity: .8;
     color: inherit;
 }
 
@@ -1163,7 +1163,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-menu-burger svg
 {
-    width: 1em; 
+    width: 1em;
     height: 1em;
 }
 .vlt-menu-burger:hover
@@ -1182,7 +1182,7 @@ select:focus::-webkit-input-placeholder
 .vlt-offcanvas-menu
 {
     position: fixed;
-    z-index: 40; 
+    z-index: 40;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1230,7 +1230,7 @@ select:focus::-webkit-input-placeholder
     width: 100%;
     padding-bottom: 6.25rem;
 
-    color: #ccc; 
+    color: #ccc;
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -1274,7 +1274,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-offcanvas-menu__navigation
 {
-    overflow-y: auto; 
+    overflow-y: auto;
 
     height: 100%;
 }
@@ -1325,7 +1325,7 @@ select:focus::-webkit-input-placeholder
     -webkit-transition: -webkit-transform 300ms cubic-bezier(.46, .03, .52, .96);
             transition: -webkit-transform 300ms cubic-bezier(.46, .03, .52, .96);
             transition:         transform 300ms cubic-bezier(.46, .03, .52, .96);
-            transition:         transform 300ms cubic-bezier(.46, .03, .52, .96), -webkit-transform 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition:         transform 300ms cubic-bezier(.46, .03, .52, .96), -webkit-transform 300ms cubic-bezier(.46, .03, .52, .96);
     -webkit-transform: translate(-15px, 0);
         -ms-transform: translate(-15px, 0);
             transform: translate(-15px, 0);
@@ -1445,7 +1445,7 @@ select:focus::-webkit-input-placeholder
 .vlt-site-overlay
 {
     position: fixed;
-    z-index: 35; 
+    z-index: 35;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1474,7 +1474,7 @@ select:focus::-webkit-input-placeholder
     width: 100%;
     padding: 0 .9375rem .9375rem;
 
-    pointer-events: none; 
+    pointer-events: none;
 
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
@@ -1516,7 +1516,7 @@ select:focus::-webkit-input-placeholder
 -------------------------------------------- */
 .vlt-footer-copyright
 {
-    pointer-events: auto; 
+    pointer-events: auto;
 
     color: #101010;
 }
@@ -1544,7 +1544,7 @@ select:focus::-webkit-input-placeholder
     display:         flex;
             flex-direction: column;
 
-    background-color: #fff; 
+    background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1567,7 +1567,7 @@ select:focus::-webkit-input-placeholder
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-    overflow: hidden; 
+    overflow: hidden;
             flex-direction: column;
 
     width: 100%;
@@ -1593,7 +1593,7 @@ select:focus::-webkit-input-placeholder
 .vlt-fullpage-slider .vlt-section__content
 {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 
     display: -webkit-box;
     display: -webkit-flex;
@@ -1617,7 +1617,7 @@ select:focus::-webkit-input-placeholder
 .vlt-fullpage-slider .vlt-section .vlt-section__ken-burn-background
 {
     position: absolute;
-    z-index: -1; 
+    z-index: -1;
     top: 0;
     left: 0;
 
@@ -1654,7 +1654,7 @@ select:focus::-webkit-input-placeholder
     -webkit-transition: -webkit-transform 5s cubic-bezier(.46, .03, .52, .96);
             transition: -webkit-transform 5s cubic-bezier(.46, .03, .52, .96);
             transition:         transform 5s cubic-bezier(.46, .03, .52, .96);
-            transition:         transform 5s cubic-bezier(.46, .03, .52, .96), -webkit-transform 5s cubic-bezier(.46, .03, .52, .96); 
+            transition:         transform 5s cubic-bezier(.46, .03, .52, .96), -webkit-transform 5s cubic-bezier(.46, .03, .52, .96);
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
@@ -1662,7 +1662,7 @@ select:focus::-webkit-input-placeholder
 .vlt-fullpage-slider .vlt-section__particles
 {
     position: absolute;
-    z-index: -1; 
+    z-index: -1;
     top: 0;
     left: 0;
 
@@ -1682,7 +1682,7 @@ select:focus::-webkit-input-placeholder
 .vlt-fullpage-slider-progress-bar
 {
     position: fixed;
-    z-index: 25; 
+    z-index: 25;
     top: 50%;
     left: 60px;
 
@@ -1718,7 +1718,7 @@ select:focus::-webkit-input-placeholder
     height: 20px;
 
     -webkit-transition: background-color 300ms cubic-bezier(.46, .03, .52, .96);
-            transition: background-color 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition: background-color 300ms cubic-bezier(.46, .03, .52, .96);
 
     background-color: rgba(16, 16, 16, .1);
 }
@@ -1739,7 +1739,7 @@ select:focus::-webkit-input-placeholder
 
     content: '';
     -webkit-transition: height 0s, background-color 300ms cubic-bezier(.46, .03, .52, .96);
-            transition: height 0s, background-color 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition: height 0s, background-color 300ms cubic-bezier(.46, .03, .52, .96);
 
     background-color: #101010;
 }
@@ -1763,7 +1763,7 @@ select:focus::-webkit-input-placeholder
     font-weight: 700;
 
     position: fixed;
-    z-index: 25; 
+    z-index: 25;
     right: 0;
     bottom: 0;
 
@@ -1797,13 +1797,13 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-fullpage-slider-numbers a
 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 
     color: inherit;
 }
 .vlt-fullpage-slider-numbers a svg
 {
-    width: 1em; 
+    width: 1em;
     height: 1em;
 }
 .vlt-fullpage-slider-numbers a:hover svg
@@ -1818,7 +1818,7 @@ select:focus::-webkit-input-placeholder
 .vlt-custom-cursor
 {
     position: absolute;
-    z-index: 100; 
+    z-index: 100;
     top: 0;
     left: 0;
 
@@ -1845,7 +1845,7 @@ select:focus::-webkit-input-placeholder
 
     -webkit-transform: translate3d(-50%, -50%, 0);
             transform: translate3d(-50%, -50%, 0);
-    pointer-events: none; 
+    pointer-events: none;
 
     opacity: .1;
     border-radius: 50%;
@@ -1867,7 +1867,7 @@ select:focus::-webkit-input-placeholder
 .vlt-custom-cursor .circle span i
 {
     font-size: 2em;
-    font-weight: normal; 
+    font-weight: normal;
     line-height: 1;
 }
 
@@ -1893,7 +1893,7 @@ select:focus::-webkit-input-placeholder
 .vlt-fixed-socials
 {
     position: fixed;
-    z-index: 20; 
+    z-index: 20;
     right: 60px;
     bottom: 50%;
 
@@ -1927,7 +1927,7 @@ select:focus::-webkit-input-placeholder
 }
 .vlt-fixed-socials a:hover
 {
-    opacity: .8; 
+    opacity: .8;
     color: inherit;
 }
 
@@ -1938,7 +1938,7 @@ select:focus::-webkit-input-placeholder
     display: -ms-inline-flexbox;
     display:         inline-flex;
 
-    color: var(--p1); 
+    color: var(--p1);
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -1963,7 +1963,7 @@ select:focus::-webkit-input-placeholder
 .animsition-loading-2
 {
     position: fixed;
-    z-index: 120; 
+    z-index: 120;
     top: 0;
     left: 0;
 
@@ -1974,7 +1974,7 @@ select:focus::-webkit-input-placeholder
 .spinner
 {
     position: absolute;
-    z-index: 2; 
+    z-index: 2;
     top: calc(50% - 25px);
     left: calc(50% - 25px);
 
@@ -1993,7 +1993,7 @@ select:focus::-webkit-input-placeholder
     height: 100%;
 
     -webkit-animation: vlt_bounce 2s infinite ease-in-out;
-            animation: vlt_bounce 2s infinite ease-in-out; 
+            animation: vlt_bounce 2s infinite ease-in-out;
 
     opacity: .6;
     border-radius: 50%;
@@ -2063,7 +2063,7 @@ body .pp-scrollable
 }
 .vlt-award-item__logo
 {
-    overflow: hidden; 
+    overflow: hidden;
 
     width: 5rem;
     height: 5rem;
@@ -2084,7 +2084,7 @@ body .pp-scrollable
 }
 .vlt-award-item__logo img
 {
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 .vlt-award-item__content
@@ -2147,7 +2147,7 @@ body .pp-scrollable
     color: #fff;
     border-radius: 0;
     border-bottom-left-radius: 8px;
-    background-color: #101010; 
+    background-color: #101010;
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2160,7 +2160,7 @@ body .pp-scrollable
 }
 .vlt-post-thumbnail .badge svg
 {
-    width: 1em; 
+    width: 1em;
     height: 1em;
 }
 
@@ -2178,7 +2178,7 @@ body .pp-scrollable
 .vlt-post-meta
 {
     font-size: .875rem;
-    font-weight: 500; 
+    font-weight: 500;
 
     margin-bottom: .625rem;
 
@@ -2187,7 +2187,7 @@ body .pp-scrollable
 .vlt-post-meta span + span::before
 {
     margin-right: .3125rem;
-    margin-left: .5rem; 
+    margin-left: .5rem;
 
     content: '/';
 }
@@ -2235,7 +2235,7 @@ body .pp-scrollable
 
     padding: .75rem 1.1875rem;
 
-    cursor: pointer; 
+    cursor: pointer;
     -webkit-transition: all 300ms cubic-bezier(.46, .03, .52, .96);
             transition: all 300ms cubic-bezier(.46, .03, .52, .96);
     text-align: center;
@@ -2262,7 +2262,7 @@ body .pp-scrollable
 .vlt-btn:disabled,
 .vlt-btn.disabled
 {
-    cursor: not-allowed; 
+    cursor: not-allowed;
     pointer-events: none;
 }
 .vlt-btn--block
@@ -2280,7 +2280,7 @@ body .pp-scrollable
 }
 .vlt-btn__icon svg
 {
-    width: 1em; 
+    width: 1em;
     height: 1em;
 }
 .vlt-btn__icon--left
@@ -2336,7 +2336,7 @@ body .pp-scrollable
 -------------------------------------------- */
 .vlt-contact-form .message
 {
-    font-size: .875rem; 
+    font-size: .875rem;
 
     display: none;
 
@@ -2371,7 +2371,7 @@ body .pp-scrollable
 
     padding: .9375rem 1.875rem .9375rem 1.25rem;
 
-    border-radius: 8px; 
+    border-radius: 8px;
     background-color: rgba(255, 255, 255, .1);
     -webkit-box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, .1);
             box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, .1);
@@ -2397,7 +2397,7 @@ body .pp-scrollable
 {
     margin-left: .9375rem;
 
-    color: #fff; 
+    color: #fff;
 
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -2428,7 +2428,7 @@ body .pp-scrollable
 
     content: '';
     -webkit-transition: width 300ms cubic-bezier(.46, .03, .52, .96);
-            transition: width 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition: width 300ms cubic-bezier(.46, .03, .52, .96);
     vertical-align: middle;
 
     background-color: currentColor;
@@ -2461,7 +2461,7 @@ body .pp-scrollable
 {
     display: block;
 
-    width: auto; 
+    width: auto;
 
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
@@ -2470,7 +2470,7 @@ body .pp-scrollable
 .vlt-partner-logo img
 {
     -webkit-transition: opacity 300ms cubic-bezier(.46, .03, .52, .96);
-            transition: opacity 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition: opacity 300ms cubic-bezier(.46, .03, .52, .96);
 
     opacity: .5;
 }
@@ -2483,7 +2483,7 @@ body .pp-scrollable
 -------------------------------------------- */
 .vlt-progress-bar__title
 {
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
 
     margin: 0 0 .5rem;
 }
@@ -2500,7 +2500,7 @@ body .pp-scrollable
 {
     position: relative;
 
-    overflow: hidden; 
+    overflow: hidden;
 
     width: 100%;
     height: 4px;
@@ -2528,7 +2528,7 @@ body .pp-scrollable
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-    overflow: hidden; 
+    overflow: hidden;
 
     width: 100%;
     height: 100%;
@@ -2542,7 +2542,7 @@ body .pp-scrollable
 .vlt-project-showcase .vlt-project-showcase__items
 {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 
     padding: 0 8vw;
 
@@ -2579,7 +2579,7 @@ body .pp-scrollable
 }
 .vlt-project-showcase .vlt-project-showcase__items .vlt-project-showcase__item__category::before
 {
-    margin-right: .375rem; 
+    margin-right: .375rem;
 
     content: '/';
 }
@@ -2590,7 +2590,7 @@ body .pp-scrollable
 .vlt-project-showcase .vlt-project-showcase__images
 {
     position: absolute;
-    z-index: 1; 
+    z-index: 1;
     top: 50%;
     right: 0;
 
@@ -2634,7 +2634,7 @@ body .pp-scrollable
         -ms-transform: scale(1.05);
             transform: scale(1.05);
 
-    opacity: 0; 
+    opacity: 0;
 
     -o-object-fit: cover;
        object-fit: cover;
@@ -2650,7 +2650,7 @@ body .pp-scrollable
 .vlt-project-showcase .vlt-project-showcase__item
 {
     -webkit-transition: opacity 300ms cubic-bezier(.46, .03, .52, .96);
-            transition: opacity 300ms cubic-bezier(.46, .03, .52, .96); 
+            transition: opacity 300ms cubic-bezier(.46, .03, .52, .96);
 
     opacity: .05;
 }
@@ -2708,7 +2708,7 @@ body .pp-scrollable
 .vlt-work-meta
 {
     font-size: .875rem;
-    font-weight: 500; 
+    font-weight: 500;
 
     margin-bottom: .625rem;
 
@@ -2717,7 +2717,7 @@ body .pp-scrollable
 .vlt-work-meta span + span::before
 {
     margin-right: .3125rem;
-    margin-left: .5rem; 
+    margin-left: .5rem;
 
     content: '/';
 }
@@ -2792,7 +2792,7 @@ body .pp-scrollable
     position: relative;
 
     display: inline-block;
-    overflow: hidden; 
+    overflow: hidden;
 
     border-radius: 10px;
 }
@@ -2810,7 +2810,7 @@ body .pp-scrollable
     position: absolute;
 
     display: inline-block;
-    overflow: hidden; 
+    overflow: hidden;
 
     width: auto;
 }
@@ -2841,7 +2841,7 @@ body .pp-scrollable
     -webkit-transition: opacity 500ms cubic-bezier(.46, .03, .52, .96), -webkit-transform 500ms cubic-bezier(.46, .03, .52, .96);
             transition: opacity 500ms cubic-bezier(.46, .03, .52, .96), -webkit-transform 500ms cubic-bezier(.46, .03, .52, .96);
             transition: opacity 500ms cubic-bezier(.46, .03, .52, .96), transform 500ms cubic-bezier(.46, .03, .52, .96);
-            transition: opacity 500ms cubic-bezier(.46, .03, .52, .96), transform 500ms cubic-bezier(.46, .03, .52, .96), -webkit-transform 500ms cubic-bezier(.46, .03, .52, .96); 
+            transition: opacity 500ms cubic-bezier(.46, .03, .52, .96), transform 500ms cubic-bezier(.46, .03, .52, .96), -webkit-transform 500ms cubic-bezier(.46, .03, .52, .96);
     -webkit-transform: scale(.8);
         -ms-transform: scale(.8);
             transform: scale(.8);
@@ -2862,7 +2862,7 @@ body .pp-scrollable
 
     letter-spacing: -.01em;
 
-    color: #999; 
+    color: #999;
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2872,7 +2872,7 @@ body .pp-scrollable
 .vlt-testimonial-slider-controls .pagination,
 .vlt-timeline-slider-controls .pagination
 {
-    min-width: 3.75rem; 
+    min-width: 3.75rem;
     margin: 0 .9375rem;
 
     -webkit-box-pack: center;
@@ -2938,7 +2938,7 @@ body .pp-scrollable
 
     content: '';
 
-    opacity: .2; 
+    opacity: .2;
     background-image: url('../img/root/quote.svg');
     background-position: center;
     background-size: cover;
@@ -2995,7 +2995,7 @@ body .pp-scrollable
 .vlt-timeline-slider .swiper-slide:not(.swiper-slide-active)
 {
     -webkit-transition: opacity 500ms cubic-bezier(.46, .03, .52, .96);
-            transition: opacity 500ms cubic-bezier(.46, .03, .52, .96); 
+            transition: opacity 500ms cubic-bezier(.46, .03, .52, .96);
 
     opacity: 0;
 }
@@ -3054,7 +3054,7 @@ body .pp-scrollable
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-            flex-direction: column; 
+            flex-direction: column;
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -3079,7 +3079,7 @@ body .pp-scrollable
     line-height: 1;
 
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -3105,7 +3105,7 @@ body .pp-scrollable
 }
 .vlt-video-button a svg
 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
 
     position: relative;
 
@@ -3128,7 +3128,7 @@ body .pp-scrollable
             transition:         transform 300ms cubic-bezier(.46, .03, .52, .96);
             transition:         transform 300ms cubic-bezier(.46, .03, .52, .96), -webkit-transform 300ms cubic-bezier(.46, .03, .52, .96);
 
-    opacity: .1; 
+    opacity: .1;
     border-radius: 50%;
     background-color: #101010;
 }
