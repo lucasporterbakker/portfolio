@@ -9,7 +9,7 @@
 /*!
  * GSAP 3.2.4
  * https://greensock.com
- * 
+ *
  * @license Copyright 2020, GreenSock. All rights reserved.
  * Subject to the terms at https://greensock.com/standard-license or for Club GreenSock members, the agreement issued with that membership.
  * @author: Jack Doyle, jack@greensock.com
@@ -1218,7 +1218,7 @@
 
     };
 })(jQuery, document, window);
-/* 
+/*
  *   jQuery Numerator Plugin 0.2.1
  *   https://github.com/garethdn/jquery-numerator
  *
@@ -1321,7 +1321,7 @@
                 return this.delimit(value)
             } else {
                 return value;
-            } 
+            }
         },
 
         // TODO: Add comments to this function
