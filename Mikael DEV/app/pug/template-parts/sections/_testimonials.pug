@@ -1,0 +1,138 @@
+include ../../mixins/_global-mixins.pug
+
+.vlt-section__vertical-align
+
+	.vlt-section__content
+
+		//Ken Burn Effect
+		.vlt-section__ken-burn-background
+
+			img(src='assets/img/attachment-04.jpg', alt='')
+
+		.container
+
+			.row
+
+				.col-lg-10.offset-lg-1
+
+					+vlt_animation_block
+
+						.d-block.d-md-flex.align-items-center.justify-content-between
+
+							h1.has-white-color Testimonials
+
+							.vlt-gap-30--sm
+
+							.vlt-testimonial-slider-controls
+								span.prev 🡐
+								span.pagination
+								span.next 🡒
+
+					.vlt-gap-50
+
+					+vlt_animation_block({
+						delay: '100ms'
+					})
+
+						+vlt_testimonial_slider
+
+							+vlt_testimonial_item({
+								'avatar': 'assets/img/avatar-01.jpg',
+								'text': 'Day shall form years which rule made first, make a our night life herb midst isn\'t fish give lights land morning lesser. Said cattle. Green us fish rule third dry his for. Created signs under.',
+								'name': 'Damien O\'Ryan',
+								'function': 'Mountain Inc',
+								'style': 'background: #eb000d url(assets/img/root/cartographer.png) repeat;'
+							})
+
+							+vlt_testimonial_item({
+								'avatar': 'assets/img/avatar-02.jpg',
+								'text': 'Day shall form years which rule made first, make a our night life herb midst isn\'t fish give lights land morning lesser. Said cattle. Green us fish rule third dry his for. Created signs under.',
+								'name': 'Kien Hester',
+								'function': 'CEO Vintage',
+								'style': 'background: #eb000d url(assets/img/root/cartographer.png) repeat;'
+							})
+
+							+vlt_testimonial_item({
+								'avatar': 'assets/img/avatar-03.jpg',
+								'text': 'Day shall form years which rule made first, make a our night life herb midst isn\'t fish give lights land morning lesser. Said cattle. Green us fish rule third dry his for. Created signs under.',
+								'name': 'Chanelle Reed',
+								'function': 'Woody Nature',
+								'style': 'background: #eb000d url(assets/img/root/cartographer.png) repeat;'
+							})
+
+					.vlt-gap-70
+
+					.row.justify-content-md-between
+
+						.col-md-auto.col-sm-4
+
+							+vlt_animation_block({
+								delay: '200ms'
+							})
+
+								+vlt_partner_logo({
+									image: 'assets/img/root/client-1.png',
+									title: 'Handmade',
+									height_parent: '75',
+									height_child: '65'
+								})
+
+							.vlt-gap-40--sm
+
+						.col-md-auto.col-sm-4
+
+							+vlt_animation_block({
+								delay: '200ms'
+							})
+
+								+vlt_partner_logo({
+									image: 'assets/img/root/client-2.png',
+									title: 'Mountain',
+									height_parent: '75',
+									height_child: '58'
+								})
+
+							.vlt-gap-40--sm
+
+						.col-md-auto.col-sm-4
+
+							+vlt_animation_block({
+								delay: '200ms'
+							})
+
+								+vlt_partner_logo({
+									image: 'assets/img/root/client-3.png',
+									title: 'Collection',
+									height_parent: '75',
+									height_child: '72'
+								})
+
+							.vlt-gap-40--sm
+
+						.col-md-auto.col-sm-4
+
+							+vlt_animation_block({
+								delay: '200ms'
+							})
+
+								+vlt_partner_logo({
+									image: 'assets/img/root/client-4.png',
+									title: 'Mountainbike',
+									height_parent: '75',
+									height_child: '72'
+								})
+
+							.vlt-gap-40--sm
+
+						.col-md-auto.col-sm-4
+
+							+vlt_animation_block({
+								delay: '200ms'
+							})
+
+								+vlt_partner_logo({
+									image: 'assets/img/root/client-5.png',
+									title: 'Woody',
+									height_parent: '75',
+									height_child: '62'
+								})

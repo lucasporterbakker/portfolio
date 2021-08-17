@@ -1,0 +1,21 @@
+.vlt-link-with-arrow {
+	@extend %vlt_display_1;
+	display: inline-flex;
+	align-items: center;
+	color: map-get($colors, 'p1');
+
+	&__icon {
+		margin-top: -2px;
+		margin-left: px2rem(20px);
+		transition: margin 300ms $transition;
+	}
+
+	&:hover {
+
+		.vlt-link-with-arrow__icon {
+			margin-left: px2rem(10px);
+		}
+
+	}
+
+}

@@ -1,0 +1,52 @@
+/* WIDGET: TIMELINE SLIDER
+-------------------------------------------- */
+
+.vlt-timeline-slider {
+
+	.swiper-slide:not(.swiper-slide-active) {
+		opacity: 0;
+		transition: opacity 500ms $transition;
+	}
+
+}
+
+.vlt-timeline-slider-controls {
+	@extend .vlt-testimonial-slider-controls
+}
+
+.vlt-timeline-item {
+	padding-bottom: px2rem(30px);
+
+	&+& {
+		padding-top: px2rem(30px);
+		border-top: 1px solid rgba(map-get($colors, 'c0'), .25);
+	}
+
+	&__year {
+		display: block;
+		font-size: px2rem(18px);
+		font-weight: 700;
+		letter-spacing: -.02em;
+		color: map-get($colors, 'c0');
+
+		@include mq('medium') {
+			margin-bottom: px2rem(10px);
+		}
+
+	}
+
+	&__title {
+		font-size: px2rem(22px);
+		color: map-get($colors, 'c0');
+
+		@include mq('medium') {
+			margin-bottom: px2rem(15px);
+		}
+
+	}
+
+	&__text {
+		color: map-get($colors, 'c3');
+	}
+
+}

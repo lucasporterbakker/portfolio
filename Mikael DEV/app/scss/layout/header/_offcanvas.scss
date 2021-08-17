@@ -1,0 +1,229 @@
+/* HEADER: OFFCANVAS
+-------------------------------------------- */
+
+.vlt-offcanvas-menu {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	padding: px2rem(40px) px2rem(70px) px2rem(60px);
+	background-color: map-get($colors, 'c1');
+	transform: translate3d(100%, 0, 0);
+	z-index: z('offcanvas-menu');
+
+	@include mq('small', min) {
+		width: px2rem(550px);
+	}
+
+	@include mq('small') {
+		padding: px2rem(40px) px2rem(40px) px2rem(60px);
+	}
+
+	// menu header
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding-bottom: px2rem(100px);
+		color: map-get($colors, 'c5');
+
+		@include mq('small') {
+			padding-bottom: px2rem(50px);
+		}
+
+		@media (max-height: 559px) {
+			padding-bottom: px2rem(50px);
+		}
+
+		.vlt-menu-burger:hover {
+			color: map-get($colors, 'c0');
+		}
+
+	}
+
+	&__locales {
+
+		a {
+			@extend %vlt_display_1;
+			display: inline-block;
+
+			&+a {
+				margin-left: px2rem(20px);
+			}
+
+			&:hover,
+			&.active {
+				color: map-get($colors, 'p1');
+			}
+
+		}
+
+	}
+
+	// navigation
+	&__navigation {
+		height: 100%;
+		overflow-y: auto;
+
+		.sf-menu {
+			overflow: hidden;
+
+			li {
+				display: block;
+				float: none;
+			}
+
+			a {
+				display: inline-block;
+			}
+
+			>li {
+				padding: px2rem(10px) 0;
+
+				&>a {
+					padding: px2rem(5px) 0;
+					font-size: px2rem(32px);
+					font-weight: 700;
+					line-height: 1.1;
+					letter-spacing: -.02em;
+					color: map-get($colors, 'c5');
+
+					@include mq('small') {
+						font-size: px2rem(28px);
+					}
+
+					&::before {
+						content: '/';
+						position: absolute;
+						left: 0;
+						opacity: 0;
+						display: inline-block;
+						transform: translate(-15px, 0);
+						transition: transform 300ms $transition;
+					}
+
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+			}
+
+			>li.active>a,
+			>li:hover>a {
+				color: map-get($colors, 'p1');
+			}
+
+			>li.active>a {
+				padding-left: px2rem(20px);
+
+				&::before {
+					transform: translate(0, 0);
+					transition-delay: 150ms;
+					opacity: 1;
+				}
+
+			}
+
+		}
+
+	}
+
+	// menu footer
+	&__footer {
+		padding-top: px2rem(100px);
+
+		@include mq('small') {
+			padding-top: px2rem(50px);
+		}
+
+		>div {
+			opacity: 0;
+		}
+
+	}
+
+	// contacts
+	&__socials {
+		margin-bottom: px2rem(50px);
+		color: map-get($colors, 'c5');
+
+		@media (max-height: 559px) {
+			margin-bottom: 0;
+		}
+
+		@include mq('small') {
+			display: none;
+		}
+
+		a {
+			@extend %vlt_display_2;
+
+			&:hover {
+				color: map-get($colors, 'c0');
+			}
+		}
+
+		a+a {
+			margin-left: px2rem(20px);
+		}
+
+	}
+
+	// copyright
+	&__copyright {
+		@extend %vlt_display_1;
+		color: map-get($colors, 'c5');
+
+		p {
+			margin-bottom: 0;
+		}
+
+		@media (max-height: 559px) {
+			display: none;
+		}
+
+	}
+
+}
+
+// fix for admin bar
+@media (min-width: 783px) {
+	.admin-bar .vlt-aside-menu-wrapper {
+		top: 32px !important;
+	}
+}
+
+@media (max-width: 782px) {
+	.admin-bar .vlt-aside-menu-wrapper {
+		top: 46px !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.admin-bar .vlt-aside-menu-wrapper {
+		top: 0 !important;
+	}
+}
+
+// overlay
+.vlt-site-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(map-get($colors, 'c1'), .15);
+	opacity: 0;
+	visibility: hidden;
+	z-index: z('site-overlay');
+}

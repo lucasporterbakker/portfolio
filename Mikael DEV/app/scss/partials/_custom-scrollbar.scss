@@ -1,0 +1,14 @@
+/* PARTIAL: CUSTOM SCROLLBAR
+-------------------------------------------- */
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: map-get($colors, 'c6');
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: map-get($colors, 'p1');
+}

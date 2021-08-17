@@ -1,0 +1,50 @@
+include ../../mixins/_global-mixins.pug
+
+.vlt-section__vertical-align
+
+	.vlt-section__content
+
+		//Particles
+		.vlt-section__particles
+
+			.vlt-particle.vlt-fade-in-left.vlt-custom--1451(style='background-image: url(assets/img/root/plus-dark-pattern.png); transition-duration: 1s;')
+			.vlt-particle.d-none.d-xl-block.vlt-fade-in-right.vlt-custom--1512(style='background-image: url(assets/img/root/elipse-home-slide.png); transition-duration: 1.5s; transition-delay: 300ms;')
+			.vlt-particle.vlt-custom--4124(style='background-image: url(assets/img/attachment-01.png);')
+
+		.container
+
+			.row
+
+				.col-lg-7.offset-lg-1
+
+					+vlt_animation_block
+
+						h5.vlt-display-1.has-white-color Mikael Moore
+
+						.vlt-gap-10
+
+						h1(class='vlt-large-heading has-white-color') I’m Product#[br]Designer
+
+						.vlt-gap-40
+
+						.row
+
+							.col-auto
+
+								+vlt_counter_up_small({
+									value: 12,
+									title: 'Completed<br>projects'
+								})
+
+								.vlt-gap-20--sm
+
+							.col-auto
+
+								+vlt_counter_up_small({
+									value: 18,
+									title: 'Sutisfied<br>customers'
+								})
+
+						.vlt-gap-40
+
+						a(href='#', class='vlt-link has-white-color') Watch Resume

@@ -1,0 +1,57 @@
+// VARIABLES
+$smooth_font: true;
+$base_font_size: 14px;
+$transition: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+:root {
+	--p1: #c3323a;
+	--pf: Inter;
+}
+
+// COLORS
+$colors: ('c0': #ffffff,
+	'c1': #101010,
+	'c2': #5c5c5c,
+	'c3': #999,
+	'c4': #eee,
+	'c5': #ccc,
+	'c6': #222,
+	'p1': var(--p1));
+
+// FONTS
+$fonts: ('pf': var(--pf));
+
+// SCALES
+$scales: ('s0': 50px,
+	's1': 44px,
+	's2': 40px,
+	's3': 32px,
+	's4': 28px,
+	's5': 24px,
+	's6': 22px,
+	's7': 20px,
+	's8': 18px,
+	's9': 16px,
+	's10': 14px,
+	's11': 12px);
+
+// BREAKPOINTS
+$breakpoints: ('small': 576px,
+	'medium': 768px,
+	'large': 992px,
+	'xlarge': 1200px,
+	'xxlarge': 1280px);
+
+// Z-INDEXES
+$z-indexes: ('default': 1,
+	'fixed-footer': 20,
+	'fixed-socials': 20,
+	'slider-progress-bar': 25,
+	'slider-numbers': 25,
+	'header': 30,
+	'site-overlay': 35,
+	'offcanvas-menu': 40,
+	'navbar': 50,
+	'custom-cursor': 100,
+	'preloader-spinner': 120,
+);

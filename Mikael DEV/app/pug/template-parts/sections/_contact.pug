@@ -1,0 +1,99 @@
+include ../../mixins/_global-mixins.pug
+
+.vlt-section__vertical-align
+
+	.vlt-section__content
+
+		//Ken Burn Effect
+		.vlt-section__ken-burn-background
+
+			img(src='assets/img/attachment-05.jpg', alt='')
+
+		.container
+
+			.row
+
+				.col-lg-4.offset-lg-1
+
+					+vlt_animation_block
+
+						h1.has-white-color Contact
+
+						.vlt-gap-20
+
+						p.has-gray-color You'll called for yielding male, so lights#[br]Stars abundantly, is their.
+
+						.vlt-gap-50
+
+						div.has-white-color
+
+							h6.vlt-display-1.has-gray-color Email:
+							.vlt-gap-5
+							a(href='mailto:mikael.moore@gmail.com') mikael.moore@gmail.com
+
+						.vlt-gap-30
+
+						div.has-white-color
+							h6.vlt-display-1.has-gray-color Phone:
+							.vlt-gap-5
+							a(href='tel:+79281012345') +7 (928)-101-23-45
+
+						.vlt-gap-40
+
+						a(href='#', class='vlt-btn vlt-btn--secondary')
+							span.vlt-btn__text Get direction
+							span.vlt-btn__icon.vlt-btn__icon--right <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+
+					.vlt-gap-70--sm
+
+				.col-lg-6
+
+					+vlt_animation_block({
+						delay: '100ms'
+					})
+
+						h5.has-white-color I am always looking for great collaborators. Let’s message me and make #[span.has-first-color something together!]
+
+						.vlt-gap-40
+
+						form(class='vlt-contact-form', novalidate='novalidate')
+
+							.vlt-form-row.two-col
+
+								.vlt-form-group
+
+									label(for='name', class='has-white-color') Your name (required)
+									input(type='text', id='name', name='name', required='required', placeholder='Your Name')
+
+								.vlt-form-group
+
+									label(for='email', class='has-white-color') Your email (required)
+									input(type='email', id='email', name='email', required='required', placeholder='Your Email')
+
+							.vlt-form-row.two-col
+
+								.vlt-form-group
+
+									label(for='category', class='has-white-color') Category (optional)
+									input(type='text', id='category', name='category', placeholder='Category')
+
+								.vlt-form-group
+
+									label(for='budget', class='has-white-color') Choose a Budget (USD)
+									select(id='budget', name='budget')
+										option(value='500-1000') $500 - $1000
+										option(value='1000-10000') $1000 - $10 000
+										option(value='10000+') $10 000 +
+
+							.vlt-form-group
+
+								label(for='message', class='has-white-color') Your Message
+								textarea(name='message', id='message', rows='3', placeholder='Message')
+
+							.message.success Your message is successfully sent...
+							.message.danger Sorry something went wrong!
+
+							+vlt_button({
+								tag: 'button',
+								title: 'Contact Me'
+							})

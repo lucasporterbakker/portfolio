@@ -1,0 +1,120 @@
+//- Page Options
+- HtmlClass = 'no-js'
+- SiteName = 'Mikael'
+- PageTitle = 'Modern & Creative CV/Resume HTML5 Template' // page title
+- Sections = [ 'Home', 'Services', 'Experience', 'Skills', 'Portfolio', 'Awards', 'Testimonials', 'Blog', 'Contact' ];
+
+//- Options
+- CustomCursor = 'enable' // enable / disable
+- FixedSocials = 'show' // show / hide
+- Preloader = 'show' // show / hide
+- FooterFixed = 'enable' // enable / disable
+
+//- HTML Class
+- HtmlClass += CustomCursor == 'enable' ? ' vlt-is--custom-cursor' : ''
+
+//- Body Class
+- BodyClass = Preloader == 'show' ? ' animsition' : ''
+
+include mixins/_global-mixins.pug
+
+doctype html
+html(lang='en', class=HtmlClass)
+	head
+		meta(charset='utf-8')
+
+		//- Head
+		include html/_head.pug
+
+	body(class=BodyClass)
+
+		//- Header
+		include template-parts/header/_header.pug
+
+		//- Fixed Socials
+		include template-parts/global/_fixed-socials.pug
+
+		//- Main
+		+site_main
+
+			+vlt_fullpage_slider
+
+				//Home
+				+vlt_fullpage_slider_section({
+					anchor: Sections[0],
+					brightness: 'dark',
+					style: 'background-image: url(assets/img/root/red-background.jpg);'
+				})
+
+					include template-parts/sections/_main.pug
+
+				//Services
+				+vlt_fullpage_slider_section({
+					anchor: Sections[1],
+					brightness: 'light',
+				})
+
+					include template-parts/sections/_services.pug
+
+				//Experience
+				+vlt_fullpage_slider_section({
+					anchor: Sections[2],
+					brightness: 'dark',
+					ken_burn_background: 'assets/img/attachment-02.jpg'
+				})
+
+					include template-parts/sections/_experience.pug
+
+				//Skills
+				+vlt_fullpage_slider_section({
+					anchor: Sections[3],
+					brightness: 'light',
+				})
+
+					include template-parts/sections/_skills.pug
+
+				//Portfolio
+				+vlt_fullpage_slider_section({
+					anchor: Sections[4],
+					brightness: 'dark',
+				})
+
+					include template-parts/sections/_portfolio.pug
+
+				//Awards
+				+vlt_fullpage_slider_section({
+					anchor: Sections[5],
+					brightness: 'light',
+				})
+
+					include template-parts/sections/_awards.pug
+
+				//Testimonials
+				+vlt_fullpage_slider_section({
+					anchor: Sections[6],
+					brightness: 'dark',
+				})
+
+					include template-parts/sections/_testimonials.pug
+
+				//Blog
+				+vlt_fullpage_slider_section({
+					anchor: Sections[7],
+					brightness: 'light',
+				})
+
+					include template-parts/sections/_blog.pug
+
+				//Contact
+				+vlt_fullpage_slider_section({
+					anchor: Sections[8],
+					brightness: 'dark'
+				})
+
+					include template-parts/sections/_contact.pug
+
+			//- Footer
+			include template-parts/footer/_footer.pug
+
+		//- Scripts
+		include html/_scripts.pug

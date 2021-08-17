@@ -1,0 +1,16 @@
+mixin vlt_partner_logo(object)
+
+	//- Default
+	- object = object || {}
+	- object.image = object.image || ''
+	- object.title = object.title || ''
+	- object.height_parent = object.height_parent || '130'
+	- object.height_child = object.height_child || '90'
+
+	//- Element Class
+	- elClass = 'vlt-partner-logo'
+
+	//Partner Logo
+	div(class=elClass, style='height:' + object.height_parent + 'px;')
+
+		img(src=object.image, alt=object.title, style='height:' + object.height_child + 'px;')

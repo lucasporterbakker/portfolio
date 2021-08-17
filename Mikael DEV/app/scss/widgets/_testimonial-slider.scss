@@ -1,0 +1,113 @@
+/* WIDGET: TESTIMONIAL SLIDER
+-------------------------------------------- */
+
+.vlt-testimonial-slider {
+
+	.swiper-slide:not(.swiper-slide-active) {
+		opacity: 0;
+		transform: scale(.8);
+		transition: opacity 500ms $transition, transform 500ms $transition;
+	}
+
+}
+
+.vlt-testimonial-slider-controls {
+	display: inline-flex;
+	align-items: center;
+	font-size: px2rem(20px);
+	font-weight: 600;
+	letter-spacing: -.01em;
+	color: map-get($colors, 'c3');
+
+	.pagination {
+		justify-content: center;
+		margin: 0 px2rem(15px);
+		min-width: px2rem(60px);
+
+		.sep {
+			margin: 0 px2rem(8px);
+		}
+
+	}
+
+	.prev,
+	.next {
+		transition: color 300ms $transition;
+		cursor: pointer;
+		outline: none;
+
+		&:hover {
+			color: map-get($colors, 'c0');
+		}
+
+	}
+}
+
+.vlt-testimonial-item {
+	display: flex;
+	position: relative;
+	padding: px2rem(35px) px2rem(80px) px2rem(35px) px2rem(40px);
+	color: map-get($colors, 'c0');
+	border-radius: 10px;
+	box-shadow: 0px 5px 15px 5px rgba(map-get($colors, 'c1'), 0.1);
+
+	@include mq('medium') {
+		padding-right: px2rem(40px);
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: px2rem(40px);
+		bottom: px2rem(40px);
+		height: px2rem(50px);
+		width: px2rem(50px);
+		background-image: url('../img/root/quote.svg');
+		background-size: cover;
+		background-position: center;
+		opacity: 0.2;
+	}
+
+	&__avatar {
+		margin-right: px2rem(40px);
+
+		img {
+			max-width: px2rem(120px);
+			border-radius: 50%;
+		}
+
+		@include mq('medium') {
+			display: none;
+		}
+
+	}
+
+	&__content {
+		flex-basis: 100%;
+
+		p {
+			font-size: px2rem(20px);
+			line-height: 1.5;
+			font-weight: 500;
+			letter-spacing: -.01em;
+		}
+
+	}
+
+	&__meta {
+		margin-top: px2rem(30px);
+
+		h6 {
+			font-size: px2rem(20px);
+			line-height: 1.5;
+			color: inherit;
+		}
+
+		span {
+			@extend %vlt_display_1;
+			opacity: 0.8;
+		}
+
+	}
+
+}

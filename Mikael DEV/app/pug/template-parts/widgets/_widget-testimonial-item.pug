@@ -1,0 +1,35 @@
+mixin vlt_testimonial_item(object)
+
+	//- Default
+	- object = object || {}
+	- object.avatar = object.avatar || ''
+	- object.text = object.text || ''
+	- object.name = object.name || ''
+	- object.function = object.function || ''
+	- object.style = object.style || ''
+
+	//- Element Class
+	- elClass = 'vlt-testimonial-item'
+
+	//Testimonial Item
+	div(class=elClass, style=object.style)
+
+		if object.avatar != ''
+
+			.vlt-testimonial-item__avatar
+
+				img(src=object.avatar, alt=object.name)
+
+		.vlt-testimonial-item__content
+
+			if object.text != ''
+
+				p #{object.text}
+
+			.vlt-testimonial-item__meta
+
+				if object.name != ''
+					h6 #{object.name}
+
+				if object.function != ''
+					span #{object.function}

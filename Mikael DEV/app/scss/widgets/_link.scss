@@ -1,0 +1,31 @@
+/* WIDGET: LINK
+-------------------------------------------- */
+
+.vlt-link {
+	position: relative;
+	font-size: px2rem(20px);
+	letter-spacing: -0.01em;
+	font-weight: 600;
+	color: map-get($colors, 'c1');
+
+	&::before {
+		content: '';
+		display: inline-block;
+		height: 2px;
+		width: px2rem(50px);
+		margin-right: px2rem(20px);
+		margin-top: px2rem(-2px);
+		vertical-align: middle;
+		background-color: currentColor;
+		transition: width 300ms $transition;
+	}
+
+	&:hover {
+
+		&::before {
+			width: px2rem(40px);
+		}
+
+	}
+
+}

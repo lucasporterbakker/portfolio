@@ -1,0 +1,14 @@
+mixin vlt_animation_block(object)
+
+	//- Default
+	- object = object || {}
+	- object.delay = object.delay || '0s'
+	- object.duration = object.duration || '700ms'
+
+	//- Element Class
+	- elClass = 'vlt-animated-block'
+
+	//Animated Block
+	div(class=elClass, style='animation-delay:' + object.delay + '; animation-duration:' + object.duration + ';')
+
+		block

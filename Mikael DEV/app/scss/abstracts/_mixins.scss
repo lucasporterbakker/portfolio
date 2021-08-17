@@ -1,0 +1,86 @@
+@mixin clearfix {
+
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+	content: $content;
+	display: $display;
+	position: $pos;
+}
+
+@mixin input-placeholder {
+	&.placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+@mixin mq($width, $type: max) {
+	@if map_has_key($breakpoints, $width) {
+		$width: map_get($breakpoints, $width);
+
+		@if $type==max {
+			$width: $width - 1px;
+		}
+
+		@media only screen and (#{$type}-width: $width) {
+			@content;
+		}
+	}
+
+	@else {
+		@error 'There is no breakpoints.';
+	}
+}
+
+@mixin selection {
+	::-moz-selection {
+		@content;
+	}
+
+	::selection {
+		@content;
+	}
+}
+
+@mixin gap($gap) {
+	height: px2rem($gap);
+
+	&--sm {
+
+		@include mq('medium') {
+			height: px2rem($gap);
+		}
+
+	}
+
+	&--md {
+
+		@include mq('large') {
+			height: px2rem($gap);
+		}
+
+	}
+
+}

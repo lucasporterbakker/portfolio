@@ -1,0 +1,84 @@
+//Header
+header.vlt-header
+
+	.vlt-navbar.vlt-navbar--main.vlt-navbar--fixed
+
+		.vlt-navbar-background
+
+		.vlt-navbar-inner
+
+			.vlt-navbar-inner--left
+
+				//Logo
+				a(href='index.html', class='vlt-navbar-logo')
+
+					img(src='assets/img/root/logo-black.png', alt=SiteName, class='black')
+					img(src='assets/img/root/logo-white.png', alt=SiteName, class='white')
+
+				//Contacts
+				nav.vlt-navbar-contacts.d-none.d-md-block
+
+					ul
+
+						li
+
+							a(href='tel:+79281012345') +7 (928)-101-23-45
+
+						li.sep /
+
+						li
+							a(href='mailto:mikael.moore@gmail.com') mikael.moore@gmail.com
+
+			.vlt-navbar-inner--right
+
+				.d-flex.align-items-center
+
+					//Menu Burger
+					a(href='#', class='vlt-menu-burger js-offcanvas-menu-open')
+
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+
+//Offcanvas Menu
+.vlt-offcanvas-menu
+
+	.vlt-offcanvas-menu__header
+
+		//Locales
+		nav.vlt-offcanvas-menu__locales
+			a(href='#', class='active') Eng
+			a(href='#') Fra
+			a(href='#') Ger
+
+		//Menu Burger
+		a(href='#', class='vlt-menu-burger vlt-menu-burger--opened js-offcanvas-menu-close')
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+
+	nav.vlt-offcanvas-menu__navigation
+
+		//Navigation
+		ul.sf-menu
+
+			each Section in Sections
+
+				li(data-menuanchor=Section)
+
+					a(href='#' + Section)= Section
+
+	.vlt-offcanvas-menu__footer
+
+		//Socials
+		.vlt-offcanvas-menu__socials
+
+			a(href='#', target='_blank') Fb.
+			a(href='#', target='_blank') Bē.
+			a(href='#', target='_blank') Tw.
+			a(href='#', target='_blank') In.
+
+		//Copyright
+		.vlt-offcanvas-menu__copyright
+
+			p &copy; 2020 Copiright.#[br]All rights reserved.
+
+//Site Overlay
+.vlt-site-overlay

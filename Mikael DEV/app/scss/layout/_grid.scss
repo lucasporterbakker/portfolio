@@ -1,0 +1,18 @@
+/* LAYOUT: GRID
+-------------------------------------------- */
+
+@include mq('xlarge', min) {
+
+	.container {
+		max-width: 1200px;
+	}
+
+}
+
+/* MAIN
+-------------------------------------------- */
+
+.vlt-main {
+	position: relative;
+	overflow: hidden;
+}

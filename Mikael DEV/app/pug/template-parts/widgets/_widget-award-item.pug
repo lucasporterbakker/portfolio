@@ -1,0 +1,36 @@
+mixin vlt_award_item(object)
+
+	//- Default
+	- object = object || {}
+	- object.image = object.image || ''
+	- object.title = object.title || ''
+	- object.text = object.text || ''
+	- object.link = object.link || '#'
+
+	//- Element Class
+	- elClass = 'vlt-award-item'
+
+	//Award Item
+	div(class=elClass)
+
+		if object.image != ''
+
+			.vlt-award-item__logo
+
+				if object.link != ''
+
+					a(href=object.link)
+
+						img(src=object.image, alt=object.title)
+
+				else
+
+					img(src=object.image, alt=object.title)
+
+		.vlt-award-item__content
+
+			if object.title != ''
+				h6 #{object.title}
+
+			if object.text != ''
+				p #{object.text}

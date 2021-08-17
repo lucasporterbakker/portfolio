@@ -1,0 +1,30 @@
+/* WIDGET: SERVICES
+-------------------------------------------- */
+
+.vlt-services {
+	overflow: hidden;
+
+	&__title {
+		margin-bottom: px2rem(15px);
+	}
+
+	&__text {
+		margin-bottom: 0;
+	}
+
+	&__link {
+		margin-top: px2rem(20px);
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+
+	&:hover {
+
+		.vlt-services__link {
+			transform: translate3d(0, 0, 0);
+			opacity: 1;
+		}
+
+	}
+
+}

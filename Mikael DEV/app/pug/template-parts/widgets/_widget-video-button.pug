@@ -1,0 +1,16 @@
+mixin vlt_video_button(object)
+
+	//- Default
+	- object = object || {}
+	- object.url = object.url || ''
+	- object.title = object.title || 'Watch Video'
+	- object.custom_class = object.custom_class || ''
+
+	//- Element Class
+	- elClass = 'vlt-video-button'
+	- elClass += ' ' + object.custom_class
+
+	//Video Button
+	div(class=elClass)
+		a(href=object.url, data-fancybox, data-small-btn='true', rel='nofollow') <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+		h6= object.title

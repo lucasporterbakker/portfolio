@@ -1,0 +1,32 @@
+/* PARTIAL: FIXED SOCIALS
+-------------------------------------------- */
+
+.vlt-fixed-socials {
+	@extend %vlt_display_2;
+	display: flex;
+	position: fixed;
+	bottom: 50%;
+	right: 60px;
+	color: map-get($colors, 'c1');
+	transform: rotate(-90deg) translate3d(50%, 0, 0); // 100% for fix bottom
+	transform-origin: 100% 100%;
+	z-index: z('fixed-socials');
+
+	@include mq('large') {
+		display: none;
+	}
+
+	.is-light & {
+		color: map-get($colors, 'c0');
+	}
+
+	a+a {
+		margin-left: px2rem(20px);
+	}
+
+	a:hover {
+		color: inherit;
+		opacity: 0.8;
+	}
+
+}

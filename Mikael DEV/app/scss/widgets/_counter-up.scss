@@ -1,0 +1,41 @@
+/* WIDGET: COUNTER UP
+-------------------------------------------- */
+
+.vlt-counter-up {
+	font-size: px2rem(120px);
+	letter-spacing: -.02em;
+	font-weight: 700;
+	line-height: 1;
+	color: map-get($colors, 'p1');
+
+	sup {
+		font-size: 33.33%;
+		vertical-align: super;
+	}
+
+}
+
+.vlt-counter-up-small {
+	display: inline-flex;
+	align-items: center;
+	padding: px2rem(15px) px2rem(30px) px2rem(15px) px2rem(20px);
+	background-color: rgba(map-get($colors, 'c0'), .1);
+	box-shadow: inset 0px -2px 0px 0px rgba(map-get($colors, 'c0'), 0.1);
+	border-radius: 8px;
+
+	span {
+		min-width: px2rem(50px);
+		font-size: px2rem(40px);
+		font-weight: 700;
+		letter-spacing: -.02em;
+		line-height: 1;
+		color: map-get($colors, 'c0');
+	}
+
+	h6 {
+		flex-basis: 100%;
+		margin-left: px2rem(15px);
+		color: map-get($colors, 'c0');
+	}
+
+}

@@ -1,0 +1,60 @@
+mixin vlt_blog_post(object)
+
+	//- Default
+	- object = object || {}
+	- object.thumbnail = object.thumbnail || ''
+	- object.title = object.title || ''
+	- object.date = object.date || ''
+	- object.category = object.category || ''
+	- object.link = object.link || '#'
+	- object.featured = object.featured || ''
+
+	- elClass = 'vlt-post'
+
+	//Blog Post
+	article(class=elClass)
+
+		if object.thumbnail != ''
+
+			.vlt-post-thumbnail
+
+				img(src=object.thumbnail, alt='')
+
+				a(class='vlt-post-thumbnail__link', href=object.link)
+
+				if object.featured == 'yes'
+
+					.badge <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+
+		.vlt-post-content
+
+			header.vlt-post-header
+
+				.vlt-post-meta
+
+					if object.category != ''
+
+						span
+
+							=object.category
+
+					if object.date != ''
+
+						span
+
+							=object.date
+
+				if object.title != ''
+
+					h3.vlt-post-title
+
+						a(href=object.link)
+
+							=object.title
+
+			footer.vlt-post-footer
+
+				a(href=object.link, class='vlt-post__link vlt-link-with-arrow')
+
+					span.vlt-link-with-arrow__text Read more
+					span.vlt-link-with-arrow__icon 🡒

@@ -1,0 +1,47 @@
+/* WIDGET: SLIDE PHOTO
+-------------------------------------------- */
+
+.vlt-slide-photo {
+	position: relative;
+	z-index: 1;
+
+	&__inside {
+		display: inline-block;
+		position: relative;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	&__caption {
+		margin-top: px2rem(5px);
+		font-size: px2rem(14px);
+		font-style: italic;
+		color: map-get($colors, 'c3');
+	}
+
+	&__particle {
+		display: inline-block;
+		position: absolute;
+		width: auto;
+		overflow: hidden;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		&.has-border-radius {
+			border-radius: 8px;
+		}
+
+		&.has-box-shadow {
+			box-shadow: 0px 5px 15px 5px rgba(map-get($colors, 'c1'), 0.1);
+		}
+
+		&.negative-z-index {
+			z-index: -1;
+		}
+
+	}
+
+}

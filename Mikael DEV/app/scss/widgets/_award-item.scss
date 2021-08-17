@@ -1,0 +1,37 @@
+/* WIDGET: AWARD ITEM
+-------------------------------------------- */
+
+.vlt-award-item {
+	display: flex;
+	align-items: center;
+
+	&__logo {
+		flex-shrink: 0;
+		width: px2rem(80px);
+		height: px2rem(80px);
+		border-radius: 4px;
+		margin-right: px2rem(30px);
+		box-shadow: 0px 2px 5px 0px rgba(map-get($colors, 'c1'), 0.1);
+		transition: box-shadow 300ms $transition;
+		overflow: hidden;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+
+	}
+
+	&__content {
+		flex-basis: 100%;
+	}
+
+	&:hover {
+
+		.vlt-award-item__logo {
+			box-shadow: 0px 5px 15px 5px rgba(map-get($colors, 'c1'), 0.1);
+		}
+
+	}
+
+}

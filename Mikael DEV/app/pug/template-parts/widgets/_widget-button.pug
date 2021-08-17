@@ -1,0 +1,36 @@
+mixin vlt_button(object)
+
+	//- Default
+	- object = object || {}
+	- object.tag = object.tag || 'a'
+	- object.title = object.title || ''
+	- object.style = object.style || 'primary' // primary / secondary
+	- object.link = object.link || ''
+	- object.icon = object.icon || ''
+	- object.icon_position = object.icon_position || 'right'
+	- object.target = object.target || '_self'
+	- object.block = object.block || 'disable'
+
+	//- Element Class
+	- elClass = 'vlt-btn'
+	- elClass += ' vlt-btn--' + object.style
+
+	- iconClass = 'vlt-btn__icon'
+	- iconClass += ' vlt-btn__icon--' + object.icon_position
+
+	if object.block == 'enable'
+
+		- elClass += ' vlt-btn--block'
+
+	//Button
+	if object.tag == 'button'
+
+		button(class=elClass)
+			span.vlt-btn__text #{object.title}
+			span(class=iconClass) !{object.icon}
+
+	else
+
+		a(class=elClass, href=object.link, target=object.target)
+			span.vlt-btn__text #{object.title}
+			span(class=iconClass) !{object.icon}

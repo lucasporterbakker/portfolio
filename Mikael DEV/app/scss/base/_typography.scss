@@ -1,0 +1,283 @@
+/* HTML
+-------------------------------------------- */
+
+html {
+	font-size: $base_font_size;
+
+	@include mq('medium', min) {
+		font-size: $base_font_size + 1px;
+	}
+
+	@include mq('large', min) {
+		font-size: $base_font_size + 2px;
+	}
+
+}
+
+/* BODY
+-------------------------------------------- */
+
+body {
+	min-width: px2rem(320px);
+	margin: 0;
+	padding: 0;
+	line-height: 1.7;
+	font-size: px2rem(16px);
+	font-family: map-get($fonts, 'pf');
+	color: map-get($colors, 'c2');
+	background-color: map-get($colors, 'c0');
+
+	@if $smooth_font {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+}
+
+/* IMAGE
+-------------------------------------------- */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* PARAGRAPH
+-------------------------------------------- */
+
+p {
+	margin: 0 0 px2rem(30px);
+
+	&:empty {
+		display: none;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+}
+
+/* STRONG
+-------------------------------------------- */
+
+strong {
+	font-weight: 600;
+}
+
+/* MARK
+-------------------------------------------- */
+
+mark {
+	background-color: map-get($colors, 'p1');
+}
+
+/* LINK
+-------------------------------------------- */
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: all 300ms $transition;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+		outline: none;
+	}
+
+	&:hover {
+		color: map-get($colors, 'p1');
+	}
+
+}
+
+/* HEADINGS
+-------------------------------------------- */
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: 700;
+	letter-spacing: -.02em;
+	color: map-get($colors, 'c1');
+}
+
+h1,
+.h1 {
+	font-size: px2rem(58px);
+	line-height: 1.15;
+
+	@include mq('small') {
+		font-size: px2rem(38px);
+	}
+
+}
+
+h2,
+.h2 {
+	font-size: px2rem(48px);
+	line-height: 1.4;
+}
+
+h3,
+.h3 {
+	font-size: px2rem(38px);
+	line-height: 1.4;
+}
+
+h4,
+.h4 {
+	font-size: px2rem(32px);
+	line-height: 1.4;
+}
+
+h5,
+.h5 {
+	font-size: px2rem(24px);
+	line-height: 1.4;
+}
+
+h6,
+.h6 {
+	font-size: px2rem(22px);
+	line-height: 1.55;
+}
+
+/* FORM / INPUT / TEXTAREA / SELECT
+-------------------------------------------- */
+
+form {
+	max-width: 100%;
+}
+
+label {
+	display: block;
+	margin-bottom: px2rem(5px);
+	user-select: none;
+	color: map-get($colors, 'c1');
+}
+
+input[type='text'],
+input[type='date'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='url'],
+input[type='search'],
+input[type='number'],
+textarea,
+select {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: px2rem(12px) px2rem(16px);
+	color: map-get($colors, 'c0');
+	border: none;
+	border-radius: 4px;
+	background-color: map-get($colors, 'c6');
+	appearance: none;
+	box-shadow: 0px 5px 15px 5px rgba(map-get($colors, 'c1'), 0.1), inset 0px -2px 0px 0px rgba(map-get($colors, 'c1'), 0.2);
+	transition: all 300ms $transition;
+	outline: none;
+}
+
+select {
+	color: map-get($colors, 'c3');
+	background-image: url("data:image/svg+xml;utf8,<svg fill='%23999999' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-position: right 16px bottom 50%;
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+}
+
+textarea {
+	width: 100%;
+	max-width: 100%;
+}
+
+button,
+input[type='submit'] {
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
+input[type='text'],
+input[type='date'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='url'],
+input[type='search'],
+input[type='number'],
+textarea,
+select {
+
+	@include input-placeholder {
+		color: map-get($colors, 'c3');
+		opacity: 1;
+	}
+
+	&:focus {
+
+		@include input-placeholder {
+			opacity: 0;
+		}
+
+	}
+
+}
+
+.vlt-form-group {
+	display: block;
+	position: relative;
+	margin-bottom: px2rem(30px);
+
+	label.error {
+		margin: px2rem(5px) 0 0;
+		color: var(--danger);
+		font-size: px2rem(13px);
+	}
+
+}
+
+.vlt-form-row {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(1, 1fr);
+
+	&.two-col {
+		grid-template-columns: repeat(2, 1fr);
+
+		@include mq('medium') {
+			grid-gap: 0;
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+	}
+
+	&.three-col {
+		grid-template-columns: repeat(3, 1fr);
+
+		@include mq('medium') {
+			grid-gap: 0;
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+	}
+
+}

@@ -1,0 +1,45 @@
+/* PARTIAL: CUSTOM CURSOR
+-------------------------------------------- */
+
+.vlt-custom-cursor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: px2rem(15px);
+	height: px2rem(15px);
+	color: map-get($colors, 'c6');
+	transition: opacity 200ms $transition 500ms;
+	pointer-events: none;
+	z-index: z('custom-cursor');
+
+	.circle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		width: px2rem(15px);
+		height: px2rem(15px);
+		background-color: currentColor;
+		border-radius: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		opacity: .1;
+		pointer-events: none;
+
+		span {
+			@extend %vlt_display_1;
+			color: map-get($colors, 'c0');
+
+			i {
+				font-size: 2em;
+				line-height: 1;
+				font-weight: normal;
+			}
+
+		}
+
+	}
+
+}
+
+// How to use it:
+// data-cursor="Sample text"

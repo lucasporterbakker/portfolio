@@ -1,0 +1,97 @@
+/* WIDGET: BUTTON
+-------------------------------------------- */
+
+.vlt-btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: px2rem(12px) px2rem(19px);
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	font-weight: 600;
+	letter-spacing: -.01em;
+	border-radius: 4px;
+	transition: all 300ms $transition;
+	outline: 0;
+	box-shadow: 0px 5px 15px 5px rgba(map-get($colors, 'c1'), 0.1), inset 0px -2px 0px 0px rgba(map-get($colors, 'c1'), 0.2);
+	vertical-align: middle;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+
+	&:disabled,
+	&.disabled {
+		pointer-events: none;
+		cursor: not-allowed;
+	}
+
+	&--block {
+		width: 100%;
+	}
+
+	&__icon {
+		text-decoration: inherit;
+
+		i,
+		svg {
+			display: block;
+		}
+
+		svg {
+			height: 1em;
+			width: 1em;
+		}
+
+		&--left {
+			margin-right: px2rem(10px);
+		}
+
+		&--right {
+			margin-left: px2rem(10px);
+		}
+
+	}
+
+	&__text {
+		flex-basis: 100%;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+
+}
+
+/* BUTTON PRIMARY
+-------------------------------------------- */
+
+.vlt-btn--primary {
+	color: map-get($colors, 'c0');
+	background-color: map-get($colors, 'p1');
+
+	&:hover {
+		color: map-get($colors, 'c0');
+		background-color: map-get($colors, 'c6');
+	}
+
+}
+
+/* BUTTON SECONDARY
+-------------------------------------------- */
+
+.vlt-btn--secondary {
+	color: map-get($colors, 'c0');
+	background-color: map-get($colors, 'c6');
+
+	&:hover {
+		color: map-get($colors, 'c0');
+		background-color: map-get($colors, 'p1');
+	}
+
+}

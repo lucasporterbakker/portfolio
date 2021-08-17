@@ -1,0 +1,151 @@
+.has-first-color {
+	color: map-get($colors, 'p1');
+}
+
+.has-first-background-color {
+	background-color: map-get($colors, 'p1');
+}
+
+.has-white-color {
+	color: map-get($colors, 'c0') !important;
+}
+
+.has-white-background-color {
+	background-color: map-get($colors, 'c0');
+}
+
+.has-gray-color {
+	color: map-get($colors, 'c3') !important;
+}
+
+.has-gray-background-color {
+	background-color: map-get($colors, 'c3');
+}
+
+.vlt-large-heading {
+	font-size: px2rem(80px);
+
+	@include mq('small') {
+		font-size: px2rem(58px);
+	}
+
+}
+
+.vlt-display-1 {
+	@extend %vlt_display_1;
+}
+
+.vlt-gap-5 {
+	@include gap(5px);
+}
+
+.vlt-gap-10 {
+	@include gap(10px);
+}
+
+.vlt-gap-20 {
+	@include gap(20px);
+}
+
+.vlt-gap-30 {
+	@include gap(30px);
+}
+
+.vlt-gap-40 {
+	@include gap(40px);
+}
+
+.vlt-gap-50 {
+	@include gap(50px);
+}
+
+.vlt-gap-70 {
+	@include gap(70px);
+}
+
+.vlt-gap-100 {
+	@include gap(100px);
+}
+
+.vlt-fade-in-left {
+	transform: translate3d(-100%, 0, 0);
+	transition: all 700ms 0s $transition;
+	opacity: 0;
+
+	&--small {
+		@extend .vlt-fade-in-left;
+		transform: translate3d(-100px, 0, 0);
+	}
+
+	.active & {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+
+}
+
+.vlt-fade-in-right {
+	transform: translate3d(100%, 0, 0);
+	transition: all 700ms 0s $transition;
+	opacity: 0;
+
+	&--small {
+		@extend .vlt-fade-in-right;
+		transform: translate3d(100px, 0, 0);
+	}
+
+	.active & {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+
+}
+
+.vlt-fade-in-top {
+	transform: translate3d(0, -100%, 0);
+	transition: all 700ms 0s $transition;
+	opacity: 0;
+
+	&--small {
+		@extend .vlt-fade-in-top;
+		transform: translate3d(0, -100px, 0);
+	}
+
+	.active & {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+.vlt-fade-in-bottom {
+	transform: translate3d(0, 100%, 0);
+	transition: all 700ms 0s $transition;
+	opacity: 0;
+
+	&--small {
+		@extend .vlt-fade-in-bottom;
+		transform: translate3d(0, 100px, 0);
+	}
+
+	.active & {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+
+}
+
+.message.success {
+	color: var(--success);
+}
+
+.message.danger {
+	color: var(--danger);
+}
+
+.center-mode {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	z-index: 1;
+}

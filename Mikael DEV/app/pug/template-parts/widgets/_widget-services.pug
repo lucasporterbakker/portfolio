@@ -1,0 +1,40 @@
+mixin vlt_services(object)
+
+	//- Default
+	- object = object || {}
+	- object.heading = object.heading || 'h5'
+	- object.title = object.title || ''
+	- object.text = object.text || ''
+
+	//- Element Class
+	- elClass = 'vlt-services'
+
+	//Services
+	div(class=elClass)
+
+		if object.title != ''
+
+			#{object.heading}(class='vlt-services__title')
+
+				if object.link != ''
+
+					a(href=object.link)
+
+						=object.title
+
+				else
+
+					=object.title
+
+		if object.text != ''
+
+			p(class='vlt-services__text')
+
+				=object.text
+
+		if object.link != ''
+
+			a(href=object.link, class='vlt-services__link vlt-link-with-arrow')
+
+				span.vlt-link-with-arrow__text Discover more
+				span.vlt-link-with-arrow__icon 🡒

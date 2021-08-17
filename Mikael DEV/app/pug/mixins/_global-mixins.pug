@@ -1,0 +1,37 @@
+//- Mixin for nav menu item
+mixin nav_item(title, url, additionalClass='')
+
+	li(class = additionalClass)
+
+		a(href = url)
+			span= title
+
+		block
+
+//- Mixin for site main
+mixin site_main(object)
+
+	//- Default
+	- elClass = 'vlt-main'
+
+	//Main
+	main(class = elClass)
+
+		block
+
+//- Widgets
+include ../template-parts/widgets/_widget-animated-block.pug
+include ../template-parts/widgets/_widget-award-item.pug
+include ../template-parts/widgets/_widget-counter-up.pug
+include ../template-parts/widgets/_widget-counter-up-small.pug
+include ../template-parts/widgets/_widget-button.pug
+include ../template-parts/widgets/_widget-progress-bar.pug
+include ../template-parts/widgets/_widget-fullpage-slider.pug
+include ../template-parts/widgets/_widget-services.pug
+include ../template-parts/widgets/_widget-video-button.pug
+include ../template-parts/widgets/_widget-partner-logo.pug
+include ../template-parts/widgets/_widget-blog-post.pug
+include ../template-parts/widgets/_widget-testimonial-slider.pug
+include ../template-parts/widgets/_widget-testimonial-item.pug
+include ../template-parts/widgets/_widget-timeline-slider.pug
+include ../template-parts/widgets/_widget-timeline-slider-item.pug

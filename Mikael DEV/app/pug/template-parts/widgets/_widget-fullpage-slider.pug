@@ -1,0 +1,48 @@
+mixin vlt_fullpage_slider(object)
+
+	//- Default
+	- object = object || {}
+	- object.loop_top = object.loop_top || ''
+	- object.loop_bottom = object.loop_bottom || ''
+	- object.speed = object.speed || '800'
+	- object.progress_bar = object.progress_bar || 'show'
+	- object.numbers = object.numbers || 'show'
+
+	//- Element Class
+	- elClass = 'vlt-fullpage-slider'
+
+	//Fullpage Slider
+	div(class=elClass, data-loop-top=object.loop_top, data-loop-bottom=object.loop_bottom, data-speed=object.speed)
+
+		block
+
+		if object.progress_bar == 'show'
+
+			//Progress Bar
+			ul.vlt-fullpage-slider-progress-bar
+
+				each Section in Sections
+
+					li(data-menuanchor=Section)
+
+		if object.numbers == 'show'
+
+			//Numbers
+			.vlt-fullpage-slider-numbers
+
+mixin vlt_fullpage_slider_section(object)
+
+	//- Default
+	- object = object || {}
+	- object.anchor = object.anchor || ''
+	- object.style = object.style || ''
+	- object.brightness = object.brightness || 'light'
+	- object.ken_burn_background = object.ken_burn_background || ''
+
+	//- Element Class
+	- elClass = 'vlt-section pp-scrollable'
+
+	//Section
+	div(class=elClass, data-anchor=object.anchor, data-brightness=object.brightness, style=object.style)
+
+		block

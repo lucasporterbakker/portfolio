@@ -1,0 +1,25 @@
+mixin vlt_progress_bar(object)
+
+	//- Default
+	- object = object || {}
+	- object.title = object.title || ''
+	- object.value = object.value || '99'
+	- object.speed = object.speed || '1000'
+
+	//- Element Class
+	- elClass = 'vlt-progress-bar'
+
+	//Progress Bar
+	div(class=elClass, data-final-value=object.value, data-animation-speed=object.speed)
+
+		if object.title != ''
+
+			h5.vlt-progress-bar__title
+
+				=object.title
+
+				span.counter 0
+
+			.vlt-progress-bar__bar
+
+				span

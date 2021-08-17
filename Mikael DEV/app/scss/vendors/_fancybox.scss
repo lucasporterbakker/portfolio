@@ -1,0 +1,16 @@
+/* VENDOR: FANCYBOX
+-------------------------------------------- */
+
+.fancybox-bg,
+.vp-fancybox .fancybox-bg {
+	background-color: map-get($colors, 'c1');
+}
+
+.fancybox-is-open .fancybox-bg {
+	opacity: .8;
+}
+
+.fancybox-loading {
+	border: 2px solid rgba(map-get($colors, 'c0'), 0.2);
+	border-top-color: map-get($colors, 'p1');
+}

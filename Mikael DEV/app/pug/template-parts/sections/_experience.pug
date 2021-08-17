@@ -1,0 +1,109 @@
+include ../../mixins/_global-mixins.pug
+
+.vlt-section__vertical-align
+
+	.vlt-section__content
+
+		//Ken Burn Effect
+		.vlt-section__ken-burn-background
+
+			img(src='assets/img/attachment-02.jpg', alt='')
+
+		.container
+
+			.row
+
+				.col-lg-10.offset-lg-1
+
+					+vlt_animation_block
+
+						.d-block.d-md-flex.align-items-center.justify-content-between
+
+							h1.has-white-color Experience
+
+							.vlt-gap-30--sm
+
+							.vlt-timeline-slider-controls
+								span.prev 🡐
+								span.pagination
+								span.next 🡒
+
+					.vlt-gap-50
+
+					+vlt_animation_block({
+						delay: '100ms'
+					})
+
+						+vlt_timeline_slider
+
+							div
+
+								+vlt_timeline_slider_item({
+									year: '2010-2012',
+									title: 'Graphic Designer,<br>Art & Co.',
+									text: 'Which firmament dominion first rule and tree. The seas he i were cattle Under living. It may beast every forth place.'
+								})
+
+								+vlt_timeline_slider_item({
+									year: '2012-2016',
+									title: 'UX/UI Designer,<br>Behance Inc.',
+									text: 'Rule bearing whales. Created gathering blessed, sixth likeness male. Over were which you\'ll so be make moveth made saw above.'
+								})
+
+								+vlt_timeline_slider_item({
+									year: '2016-2019',
+									title: 'Marketing Manager,<br>Ox Identity.',
+									text: 'Firmament itself rule their evening, which moved very night so great them cattle bearing and gathered forth had whose bearing.'
+								})
+
+							div
+
+								+vlt_timeline_slider_item({
+									year: '2010-2012',
+									title: 'Graphic Designer,<br>Art & Co.',
+									text: 'Which firmament dominion first rule and tree. The seas he i were cattle Under living. It may beast every forth place.'
+								})
+
+								+vlt_timeline_slider_item({
+									year: '2012-2016',
+									title: 'UX/UI Designer,<br>Behance Inc.',
+									text: 'Rule bearing whales. Created gathering blessed, sixth likeness male. Over were which you\'ll so be make moveth made saw above.'
+								})
+
+								+vlt_timeline_slider_item({
+									year: '2016-2019',
+									title: 'Marketing Manager,<br>Ox Identity.',
+									text: 'Firmament itself rule their evening, which moved very night so great them cattle bearing and gathered forth had whose bearing.'
+								})
+
+							div
+
+								+vlt_timeline_slider_item({
+									year: '2010-2012',
+									title: 'Graphic Designer,<br>Art & Co.',
+									text: 'Which firmament dominion first rule and tree. The seas he i were cattle Under living. It may beast every forth place.'
+								})
+
+								+vlt_timeline_slider_item({
+									year: '2012-2016',
+									title: 'UX/UI Designer,<br>Behance Inc.',
+									text: 'Rule bearing whales. Created gathering blessed, sixth likeness male. Over were which you\'ll so be make moveth made saw above.'
+								})
+
+								+vlt_timeline_slider_item({
+									year: '2016-2019',
+									title: 'Marketing Manager,<br>Ox Identity.',
+									text: 'Firmament itself rule their evening, which moved very night so great them cattle bearing and gathered forth had whose bearing.'
+								})
+
+					.vlt-gap-50
+
+					+vlt_animation_block({
+						delay: '200ms'
+					})
+
+						+vlt_button({
+							title: 'Download Resume',
+							icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>',
+							link: '#'
+						})

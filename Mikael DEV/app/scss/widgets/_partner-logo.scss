@@ -1,0 +1,25 @@
+/* WIDGET: PARTNER LOGO
+-------------------------------------------- */
+
+.vlt-partner-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	a,
+	img {
+		display: block;
+		flex-shrink: 0;
+		width: auto;
+	}
+
+	img {
+		opacity: 0.5;
+		transition: opacity 300ms $transition;
+	}
+
+	&:hover img {
+		opacity: 1;
+	}
+
+}

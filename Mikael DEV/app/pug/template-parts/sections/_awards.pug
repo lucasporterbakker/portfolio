@@ -1,0 +1,83 @@
+include ../../mixins/_global-mixins.pug
+
+.vlt-section__vertical-align
+
+	.vlt-section__content
+
+		//Particles
+		.vlt-section__particles
+
+			.vlt-particle.vlt-custom--2355.vlt-fade-in-left(style='background-image: url(assets/img/root/elipse-light.png); animation-delay: 500ms;')
+
+		.container
+
+			.row.align-items-center
+
+				.col-lg-5.offset-lg-1
+
+					+vlt_animation_block
+
+						h4 Professional awards and honors #[span.has-first-color I've reached.]
+
+						.vlt-gap-20
+
+						p Fowl be so, under sea land, tree fruitful. Man don't#[br]given #[strong unto second may] of dominion beginning.
+
+					.vlt-gap-50
+
+					+vlt_animation_block({
+						delay: '100ms'
+					})
+
+						+vlt_award_item({
+							image: 'assets/img/root/awards-01.png',
+							title: 'Honorable mension',
+							text: 'Websites, Corporate Communications.'
+						})
+
+					.vlt-gap-30
+
+					+vlt_animation_block({
+						delay: '200ms'
+					})
+
+						+vlt_award_item({
+							image: 'assets/img/root/awards-02.png',
+							title: 'Site of the day',
+							text: 'Advertising, Media & PR, Brand Strategy.'
+						})
+
+					.vlt-gap-30
+
+					+vlt_animation_block({
+						delay: '300ms'
+					})
+
+						+vlt_award_item({
+							image: 'assets/img/root/awards-03.png',
+							title: 'Innovative ideas',
+							text: 'Webby Winner, People’s Voice Winner.'
+						})
+
+					.vlt-gap-100--md
+
+				.col-lg-4.offset-lg-1
+
+					+vlt_animation_block({
+						delay: '400ms'
+					})
+
+						.vlt-slide-photo
+
+							.vlt-slide-photo__inside
+								img(src='assets/img/attachment-06.jpg', alt='')
+
+								+vlt_video_button({
+									url: 'https://vimeo.com/367945766',
+									custom_class: 'center-mode'
+								})
+
+							.vlt-slide-photo__caption * Video inauguration “Best Design” in Italy.
+
+							.vlt-slide-photo__particle.vlt-fade-in-left--small.negative-z-index(style='right: -40px; top: -40px; width: 290px; transition-delay: 1.2s;')
+								img(src='assets/img/root/plus-light-pattern.png', alt='')

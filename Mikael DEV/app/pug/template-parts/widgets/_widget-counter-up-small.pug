@@ -1,0 +1,21 @@
+mixin vlt_counter_up_small(object)
+
+	//- Default
+	- object = object || {}
+	- object.value = object.value || '99'
+	- object.title = object.title || ''
+	- object.animation_speed = object.animation_speed || '1000'
+	- object.delimiter = object.delimiter || ''
+	- object.style = object.style || ''
+
+	//- Element Class
+	- elClass = 'vlt-counter-up-small'
+
+	//Counter Up Small
+	div(class=elClass, data-ending-number=object.value, data-animation-speed=object.animation_speed, data-delimiter=object.delimiter, style=object.style)
+
+		span.counter 0
+
+		if object.title != ''
+
+			h6.vlt-display-1 !{object.title}

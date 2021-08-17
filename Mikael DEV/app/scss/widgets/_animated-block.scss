@@ -1,0 +1,12 @@
+/* WIDGET: ANIMATED BLOCK
+-------------------------------------------- */
+
+.vlt-animated-block {
+
+	&.animated {
+		animation-name: vlt_animation_block;
+		animation-timing-function: $transition;
+		animation-fill-mode: both;
+	}
+
+}

@@ -1,0 +1,79 @@
+include ../../mixins/_global-mixins.pug
+
+- itemTitle = ['Typography', 'Journal Mockup', 'Glued Paper', 'Fashion Men', 'Graphic Design', 'Modern Glasses']
+- itemCategory = ['Branding', 'Design', 'Inspiration', 'Branding', 'Design', 'Inspiration']
+
+
+.vlt-section__vertical-align
+
+	.vlt-section__content
+
+		//Ken Burn Effect
+		.vlt-section__ken-burn-background
+
+			img(src='assets/img/attachment-03.jpg', alt='')
+
+		.vlt-project-showcase-slider.d-block.d-lg-none
+
+			.container
+
+				.swiper-container
+
+					.swiper-wrapper
+
+						- for(var n = 0; n < 6; n++) {
+
+							.swiper-slide
+
+								.vlt-work
+
+									.vlt-work-thumbnail
+										img(src='assets/img/portfolio-0' + [n + 1] + '.jpg', alt='')
+										a(href='#', class='vlt-work-thumbnail__link')
+
+									.vlt-work-content
+
+										header.vlt-work-header
+
+											.vlt-work-meta
+
+												span= itemCategory[n]
+
+												span 01 June 2020
+
+											h3.vlt-work-title
+
+												a(href='#')= itemTitle[n]
+
+										footer.vlt-work-footer
+
+											a(href='#', class='vlt-work__link vlt-link-with-arrow')
+
+												span.vlt-link-with-arrow__text View case
+												span.vlt-link-with-arrow__icon 🡒
+
+						- }
+
+		.vlt-project-showcase.d-none.d-lg-flex
+
+			ul.vlt-project-showcase__items
+
+				- for(var n = 0; n < 6; n++) {
+
+					li.vlt-project-showcase__item
+
+						h3.vlt-project-showcase__item__title
+							a(href='#')= itemTitle[n]
+						span.vlt-project-showcase__item__category= itemCategory[n]
+
+				- }
+
+			.vlt-project-showcase__images
+
+				- for(var n = 0; n < 6; n++) {
+
+					.vlt-project-showcase__image
+
+						img(src='assets/img/portfolio-0' + [n + 1] + '.jpg', alt='')
+
+				- }

@@ -1,0 +1,186 @@
+/* PAGE: FULLPAGE SLIDER
+-------------------------------------------- */
+
+.vlt-fullpage-slider {
+	height: 100vh;
+
+	// section
+	.vlt-section {
+		flex: 1 1 auto;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-color: map-get($colors, 'c0');
+
+		&__vertical-align {
+			flex: 0 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 100%;
+			width: 100%;
+			overflow: hidden;
+		}
+
+		&__content {
+			flex: 1 1 auto;
+			display: flex;
+			align-items: center;
+			position: relative;
+			min-height: 100%;
+			width: 100%;
+			padding-top: px2rem(120px);
+			padding-bottom: px2rem(120px);
+			z-index: 2;
+		}
+
+		// ken burn effect
+		.vlt-section__ken-burn-background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			pointer-events: none;
+			z-index: -1;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transform: scale(1.5);
+				transition: transform 2.5s $transition;
+				will-change: transform;
+			}
+
+		}
+
+		&.active .vlt-section__ken-burn-background img {
+			transform: scale(1);
+			transition: transform 5s $transition;
+		}
+
+		&__particles {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			pointer-events: auto;
+			z-index: -1;
+
+			.vlt-particle {
+				position: absolute;
+				background-repeat: no-repeat;
+			}
+
+		}
+
+	}
+
+	&-progress-bar {
+		position: fixed;
+		top: 50%;
+		left: 60px;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		transform: translate(0, -50%);
+		transition: opacity 300ms 500ms $transition;
+		opacity: 0;
+		z-index: z('slider-progress-bar');
+
+		@include mq('large') {
+			display: none;
+		}
+
+		&.is-show {
+			opacity: 1;
+		}
+
+		li {
+			position: relative;
+			width: 2px;
+			height: 20px;
+			background-color: rgba(map-get($colors, 'c1'), .1);
+			transition: background-color 300ms $transition;
+
+			.is-light & {
+				background-color: rgba(map-get($colors, 'c0'), .1);
+			}
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 2px;
+				height: 20px;
+				background-color: map-get($colors, 'c1');
+				transition: height 0s, background-color 300ms $transition;
+
+				.is-light & {
+					background-color: map-get($colors, 'c0');
+
+				}
+			}
+
+			&.active~li::before {
+				height: 0;
+			}
+
+			&.active::before,
+			&:not(.prev)::before {
+				transition: height 500ms $transition, background-color 300ms $transition;
+			}
+
+		}
+
+	}
+
+	&-numbers {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: px2rem(100px);
+		height: px2rem(100px);
+		font-size: px2rem(20px);
+		font-weight: 700;
+		letter-spacing: -.01em;
+		color: map-get($colors, 'c0');
+		border-top-left-radius: 8px;
+		background-color: map-get($colors, 'c1');
+		z-index: z('slider-numbers');
+
+		a {
+			color: inherit;
+			font-size: px2rem(24px);
+
+			svg {
+				height: 1em;
+				width: 1em;
+			}
+
+			&:hover svg {
+				animation: vlt_animate_icon_bottom 300ms $transition;
+			}
+
+		}
+
+	}
+
+}

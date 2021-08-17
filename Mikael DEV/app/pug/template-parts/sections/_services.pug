@@ -1,0 +1,94 @@
+include ../../mixins/_global-mixins.pug
+
+.vlt-section__vertical-align
+
+	.vlt-section__content
+
+		//Particles
+		.vlt-section__particles
+
+			.vlt-particle.vlt-custom--1259.vlt-fade-in-right(style='background-image: url(assets/img/root/plus-light-pattern.png); animation-delay: 750ms;')
+			.vlt-particle.vlt-custom--2355.vlt-fade-in-left(style='background-image: url(assets/img/root/elipse-light.png); animation-delay: 500ms;')
+
+		.container
+
+			.row
+
+				.col-lg-2.offset-lg-1.d-none.d-lg-block
+
+					+vlt_animation_block
+
+						+vlt_counter_up({
+							value: '6',
+							suffix: '+',
+						})
+
+						.vlt-gap-40
+
+						h6 Years #[br]Experience #[br]Working
+
+				.col-lg-8.col-md-12
+
+					+vlt_animation_block({
+						delay: '100ms'
+					})
+
+						h4 Product Designer and Digital Creative Director, specialized in #[span.has-first-color UI/UX, Branding and digital designs.]
+
+					.vlt-gap-70
+
+					.row
+
+						.col-md-6
+
+							+vlt_animation_block({
+								delay: '200ms'
+							})
+
+								+vlt_services({
+									title: 'Web Design',
+									text: 'Fill appear won\'t may make moveth signs. Fourth. Good own. Green you\'re moveth us, lesser. Set grass life years subdue.',
+									link: '#',
+								})
+
+							.vlt-gap-40
+
+						.col-md-6
+
+							+vlt_animation_block({
+								delay: '300ms'
+							})
+
+								+vlt_services({
+									title: 'Branding',
+									text: 'Evening. Grass whales man isn\'t. Midst cattle form. Saw life winged a he behold isn\'t. Together can\'t Whose dominion after.',
+									link: '#',
+								})
+
+							.vlt-gap-40
+
+						.col-md-6
+
+							+vlt_animation_block({
+								delay: '400ms'
+							})
+
+								+vlt_services({
+									title: 'Illustration',
+									text: 'Man moveth second creepeth sixth fowl green to dry isn\'t him void fruitful divide. Be fish. They\'re you deep fowl which great air.',
+									link: '#',
+								})
+
+							.vlt-gap-40--sm
+
+						.col-md-6
+
+							+vlt_animation_block({
+								delay: '500ms'
+							})
+
+								+vlt_services({
+									title: 'Marketing',
+									text: 'Seas fly third green called for there she\'d, bring second. Every. Forth shall place divide beginning fruit seas their.',
+									link: '#',
+								})

@@ -1,0 +1,82 @@
+include ../../mixins/_global-mixins.pug
+
+.vlt-section__vertical-align
+
+	.vlt-section__content
+
+		//Particles
+		.vlt-section__particles
+
+			.vlt-particle.vlt-custom--1259.vlt-fade-in-right(style='background-image: url(assets/img/root/plus-light-pattern.png); animation-delay: 750ms;')
+			.vlt-particle.vlt-custom--2355.vlt-fade-in-left(style='background-image: url(assets/img/root/elipse-light.png); animation-delay: 500ms;')
+
+
+		.container
+
+			.row.align-items-center
+
+				.col-lg-4.offset-lg-1
+
+					.vlt-slide-photo
+
+						.vlt-slide-photo__inside
+							img(src='assets/img/attachment-07.jpg', alt='')
+
+						.vlt-slide-photo__particle.vlt-fade-in-bottom--small.has-border-radius.has-box-shadow(style='top: -50px; right: -40px; width: 100px; transition-delay: 300ms;')
+							img(src='assets/img/root/parallax-particle-01.png', alt='')
+
+						.vlt-slide-photo__particle.vlt-fade-in-bottom--small.has-border-radius.has-box-shadow(style='top: 40px; left: -30px; width: 80px; transition-delay: 600ms;')
+							img(src='assets/img/root/parallax-particle-02.png', alt='')
+
+						.vlt-slide-photo__particle.vlt-fade-in-left--small.has-border-radius.has-box-shadow(style='left: 30px; bottom: -50px; width: 100px; transition-delay: 900ms;')
+							img(src='assets/img/root/parallax-particle-03.png', alt='')
+
+						.vlt-slide-photo__particle.vlt-fade-in-left--small.negative-z-index(style='right: -40px; bottom: -30px; width: 290px; transition-delay: 1.2s;')
+							img(src='assets/img/root/plus-light-pattern.png', alt='')
+
+					.vlt-gap-100--md
+
+				.col-lg-5.offset-lg-1
+
+					+vlt_animation_block({
+						delay: '100ms'
+					})
+
+						h4 I’m using #[span.has-first-color top leading design] methods in my work.
+
+						.vlt-gap-20
+
+						p Sea was very don't without i deep of Multiply Signs#[br]creature make a #[strong fifth void] us face day.
+
+					.vlt-gap-50
+
+					+vlt_animation_block({
+						delay: '200ms'
+					})
+
+						+vlt_progress_bar({
+							title: 'Web Design',
+							value: 70
+						})
+
+					.vlt-gap-30
+
+					+vlt_animation_block({
+						delay: '300ms'
+					})
+
+						+vlt_progress_bar({
+							title: 'Branding',
+							value: 90
+						})
+
+					.vlt-gap-30
+
+					+vlt_animation_block({
+						delay: '400ms'
+					})
+
+						+vlt_progress_bar({
+							title: 'Photography',
+							value: 85
+						})

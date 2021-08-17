@@ -1,0 +1,67 @@
+/* Master Stylesheet
+ * Version: 1.0
+ *
+ * Powered by VLThemes
+ *
+ * 01. Helpers
+ * 02. Base
+ * 03. Layout
+ * 04. Pages
+ * 05. Partials
+ * 06. Vendors
+ * 07. Widgets
+ */
+
+/* 01. Helpers */
+
+@import 'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins',
+'abstracts/keyframes',
+'abstracts/snippets';
+
+/* 02. Base */
+
+@import 'base/helper-classes',
+'base/typography';
+
+/* 03. Layout */
+
+@import 'layout/grid',
+'layout/header',
+'layout/footer';
+
+/* 04. Pages */
+
+@import 'pages/fullpage-slider';
+
+/* 05. Partials */
+
+@import 'partials/custom-cursor',
+'partials/custom-scrollbar',
+'partials/fixed-socials',
+'partials/link-with-arrow',
+'partials/site-preloader';
+
+/* 06. Vendors */
+
+@import 'vendors/fancybox',
+'vendors/piling';
+
+/* 07. Widgets */
+
+@import 'widgets/animated-block',
+'widgets/award-item',
+'widgets/blog-post',
+'widgets/button',
+'widgets/contact-form',
+'widgets/counter-up',
+'widgets/link',
+'widgets/partner-logo',
+'widgets/progress-bar',
+'widgets/project-showcase',
+'widgets/services',
+'widgets/slide-photo',
+'widgets/testimonial-slider',
+'widgets/timeline-slider',
+'widgets/video-button';

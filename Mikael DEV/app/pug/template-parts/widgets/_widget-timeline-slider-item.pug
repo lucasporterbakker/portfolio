@@ -1,0 +1,33 @@
+mixin vlt_timeline_slider_item(object)
+
+	//- Default
+	- object = object || {}
+	- object.year = object.year || ''
+	- object.title = object.title || ''
+	- object.text = object.text || ''
+
+	//- Element Class
+	- elClass = 'vlt-timeline-item'
+
+	//Timeline Slider Item
+	div(class=elClass)
+
+		.row
+
+			.col-sm-12.col-md-3
+
+				if object.year != ''
+
+					span.vlt-timeline-item__year #{object.year}
+
+			.col-sm-12.col-md-3
+
+				if object.title != ''
+
+					h5.vlt-timeline-item__title !{object.title}
+
+			.col-sm-12.col-md-5.offset-md-1
+
+				if object.text != ''
+
+					p.vlt-timeline-item__text #{object.text}
