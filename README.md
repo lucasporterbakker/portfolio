@@ -33,6 +33,6 @@
 <a href="https://dribbble.com/lucasporterbakker" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg" alt="lucasporterbakker" height="30" width="40" /></a>
 </p>
 
-<p align="center"> 👨‍💻 Projects https://lucasporterbakker.com/portfolio.html</p>
+<!-- <p align="center"> 👨‍💻 Projects https://lucasporterbakker.com/portfolio.html</p> -->
 
 <p align="center"> 📄 Portfolio https://lucasporterbakker.com</p>
